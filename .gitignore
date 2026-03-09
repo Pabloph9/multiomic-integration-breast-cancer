@@ -1,0 +1,58 @@
+# ==========================
+# Raw and processed data
+# ==========================
+
+# Raw genomics and proteomics data (do not track large raw files)
+data/raw/*
+!data/raw/README.md
+
+# Processed files for integration
+data/processed/*
+!data/processed/README.md
+
+# Reference genomes and proteomes
+data/reference/*
+!data/reference/README.md
+
+# ==========================
+# Results and intermediate outputs
+# ==========================
+
+# Temporary trimmed reads or intermediate BAM files
+results/tmp_trimmed/
+results/bwa_alignments/
+results/proteomics_quant/
+
+# QC outputs
+results/qc/
+
+# Plots, figures, tables
+results/figures/
+results/tables/
+
+# ==========================
+# Sequencing and proteomics files
+# ==========================
+*.fastq.gz
+*.bam
+*.sam
+*.vcf
+*.mzML
+*.raw
+
+# ==========================
+# Logs and temporary files
+# ==========================
+*.log
+*.out
+nohup.out
+*.tmp
+*.swp
+
+# ==========================
+# Scripts / workflow temp files
+# ==========================
+scripts/*.out
+scripts/*.tmp
+scripts/__pycache__/
+
